@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.19)
 project(pawn_ts_ms)
 
 set(CMAKE_CXX_STANDARD 17)
