@@ -39,7 +39,7 @@ ParseMyTs("1753513619024", parsed_ts); // Parse a given timestamp string to huma
 
 ```bash
 git clone --recursive https://github.com/borz7zy/PawnTsMs.git
-cd pawn_ts_ms && mkdir build && cd build
+cd PawnTsMs && mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-m32 -w -fPIC -static-libgcc -static-libstdc++"
 cmake --build .
 ```
@@ -48,12 +48,23 @@ cmake --build .
 
 ```bash
 git clone --recursive https://github.com/borz7zy/PawnTsMs.git
-cd pawn_ts_ms && mkdir build && cd build
+cd PawnTsMs && mkdir build && cd build
 cmake .. -A Win32 -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
 
 ---
+
+### Docker (ubuntu 18.04)
+
+```bash
+git clone --recursive https://github.com/borz7zy/PawnTsMs.git
+cd PawnTsMs
+docker build -t pawn_ts_ms .
+docker create --name temp_extract_ptm pawn_ts_ms
+docker cp temp_extract_ptm:/project/build/pawn_ts_ms.so .
+docker rm temp_extract_ptm
+```
 
 ## License
 
