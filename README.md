@@ -38,7 +38,7 @@ ParseMyTs("1753513619024", parsed_ts); // Parse a given timestamp string to huma
 ### Linux
 
 ```bash
-git clone --recursive <repo-url>
+git clone --recursive https://github.com/borz7zy/PawnTsMs.git
 cd pawn_ts_ms && mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-m32 -w -fPIC -static-libgcc -static-libstdc++"
 cmake --build .
@@ -47,7 +47,7 @@ cmake --build .
 ### Windows
 
 ```bash
-git clone --recursive <repo-url>
+git clone --recursive https://github.com/borz7zy/PawnTsMs.git
 cd pawn_ts_ms && mkdir build && cd build
 cmake .. -A Win32 -DCMAKE_BUILD_TYPE=Release
 cmake --build .
