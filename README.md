@@ -31,9 +31,10 @@ ParseMyTs("1753513619024", parsed_ts); // Parse a given timestamp string to huma
 
 ### Requirements
 
-- `g++-multilib` (Linux)
+- `g++-multilib >= 8` (Linux)
+- `clang >= 10` (Linux)
 - Visual Studio (any edition with C++17 support)
-- `cmake >= 3.10`
+- `cmake >= 3.19`
 
 ### Linux
 
